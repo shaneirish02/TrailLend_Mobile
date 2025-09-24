@@ -83,7 +83,7 @@ export default function SignUpScreen({ navigation }) {
     }
 
     try {
-      const response = await axios.post('http://192.168.226.115:8000/api/users/register/', {
+      const response = await axios.post('http://192.168.46.115:8000/api/users/register/', {
         name: scannedData.name,
         student_id: scannedData.studentId,
         course: scannedData.course,

@@ -10,7 +10,7 @@ export default function AdminLoginScreen({ navigation }) {
   const handleLogin = async () => {
     try {
       const response = await axios.post(
-        'http://192.168.226.115:8000/api/users/login/',
+        'http://192.168.46.115:8000/api/users/login/',
         {
           username,
           password,

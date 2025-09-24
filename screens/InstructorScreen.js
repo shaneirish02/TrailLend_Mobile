@@ -84,7 +84,7 @@ export default function InstructorScreen({ navigation }) {
     }
 
     try {
-      const response = await axios.post('http://192.168.226.115:8000/api/users/register/', {
+      const response = await axios.post('http://192.168.46.115:8000/api/users/register/', {
         full_name: scannedData.name,
         instructor_id: scannedData.instructorId,
         department: scannedData.department,

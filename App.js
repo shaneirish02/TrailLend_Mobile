@@ -107,7 +107,7 @@ async function registerForPushNotificationsAsync() {
 
   // ✅ Optional: send to your backend
   try {
-    await axios.post('http://192.168.226.115:8000/api/save_push_token/', {
+    await axios.post('http://192.168.46.115:8000/api/save_push_token/', {
       token: token,
     });
   } catch (error) {

@@ -2,7 +2,7 @@ import axios from 'axios';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 // ✅ Base URL
-const BASE_URL = 'http://192.168.226.115:8000/api';
+const BASE_URL = 'http://192.168.46.115:8000/api';
 
 // ✅ Auth token (optional if you use Token auth)
 let authToken = null;

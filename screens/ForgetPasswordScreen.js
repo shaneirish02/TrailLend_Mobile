@@ -16,7 +16,7 @@ export default function ForgetPasswordScreen({ navigation }) {
 
   const handleSendCode = async () => {
     try {
-      await axios.post('http://192.168.226.115:8000/api/users/request-reset/', { email });
+      await axios.post('http://192.168.46.115:8000/api/users/request-reset/', { email });
       setStep(2);
     } catch (err) {
       alert('Email not found');
@@ -25,7 +25,7 @@ export default function ForgetPasswordScreen({ navigation }) {
 
   const handleVerifyCode = async () => {
     try {
-      await axios.post('http://192.168.226.115:8000/api/users/verify-reset-code/', { email, code });
+      await axios.post('http://192.168.46.115:8000/api/users/verify-reset-code/', { email, code });
       setStep(3);
     } catch (err) {
       alert('Invalid verification code');
@@ -38,7 +38,7 @@ export default function ForgetPasswordScreen({ navigation }) {
       return;
     }
     try {
-      await axios.post('http://192.168.226.115:8000/api/users/reset-password/', {
+      await axios.post('http://192.168.46.115:8000/api/users/reset-password/', {
         email,
         code,
         new_password: newPassword,

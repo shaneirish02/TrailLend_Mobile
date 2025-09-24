@@ -22,7 +22,7 @@ export default function NotificationScreen({ navigation }) {
       const token = await AsyncStorage.getItem('access');
       if (!token) return;
 
-      const res = await fetch('http://192.168.226.115:8000/api/notifications/', {
+      const res = await fetch('http://192.168.46.115:8000/api/notifications/', {
         method: 'GET',
         headers: {
           Authorization: `Bearer ${token}`,

@@ -26,7 +26,7 @@ export default function ReservationSummaryScreen({ route }) {
 
   const imageUrl = item.image?.startsWith('http')
     ? item.image
-    : `http://192.168.226.115:8000${item.image}`;
+    : `http://192.168.46.115:8000${item.image}`;
 
   const formatISOToReadable = (isoString) => {
     const date = new Date(isoString);
@@ -84,7 +84,7 @@ export default function ReservationSummaryScreen({ route }) {
 
       console.log("🔼 Sending Reservation Payload:", payload);
 
-      const response = await fetch('http://192.168.226.115:8000/api/reserve/', {
+      const response = await fetch('http://192.168.46.115:8000/api/reserve/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

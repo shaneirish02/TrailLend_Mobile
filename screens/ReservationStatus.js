@@ -38,7 +38,7 @@ const ReservationStatus = ({ route }) => {
 
   const handleCancel = async (id) => {
     try {
-      await axios.post(`http://192.168.226.115:8000/api/reservations/${id}/cancel/`);
+      await axios.post(`http://192.168.46.115:8000/api/reservations/${id}/cancel/`);
       fetchReservations(); // Refresh list
     } catch (error) {
       console.error('Error cancelling reservation:', error);

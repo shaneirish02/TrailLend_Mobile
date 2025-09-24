@@ -9,7 +9,7 @@ export default function ItemCard({ item }) {
 
   const imageUrl = item.image?.startsWith('http')
     ? item.image
-    : `http://192.168.226.115:8000${item.image}`; // 🔁 Replace with your IP
+    : `http://192.168.46.115:8000${item.image}`; // 🔁 Replace with your IP
 
   const displayFee =
     item.payment_type === 'custom'

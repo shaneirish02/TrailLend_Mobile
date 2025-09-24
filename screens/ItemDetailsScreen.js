@@ -23,7 +23,7 @@ export default function ItemDetailsScreen({ route }) {
 
   const imageUrl = item.image?.startsWith('http')
     ? item.image
-    : `http://192.168.226.115:8000${item.image}`;
+    : `http://192.168.46.115:8000${item.image}`;
 
   const displayFee =
     item.payment_type === 'custom'
